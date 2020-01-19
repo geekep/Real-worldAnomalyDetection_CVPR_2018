@@ -86,5 +86,3 @@ tpr = tp / sum(All_GT); fpr = fp / sum(All_GT == 0);
 AUC = trapz(fpr, tpr);
 precison = tp ./ (fp + tp);
 % [X, Y, T, AUC] = perfcurve(All_GT, All_Detect, 1);
-
-
